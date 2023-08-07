@@ -26,7 +26,7 @@ const[currentTitle, setCurrentTitle] = useState('');
   }
   function Delete(index)
   {
-    // setNotes((notes) => notes.filter((_, i) => i !== index));   fff
+    // setNotes((notes) => notes.filter((_, i) => i !== index));   fffdfdf
   }
  
   return (
