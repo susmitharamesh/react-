@@ -1,0 +1,21 @@
+.App
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+background-size: 100% 100%;
+   background: linear-gradient(rgb(111, 142, 144),rgb(59, 145, 99));
+}
+.submit
+{
+   width:80px;
+   background-color: darkkhaki;
+   color:red;
+}
+li{
+    list-style-type:circle;
+    color:#fff;
+}
+button{
+    justify-content: space-between;
+}
