@@ -10,33 +10,23 @@ const[currentTitle, setCurrentTitle] = useState('');
     if (currentNote.trim() && currentTitle.trim() !== '') {
       setNotes([...notes, currentNote]);
       setCurrentNote('')// after it will null;
-      setCurrentTitle('')// after it will
+      // setCurrentTitle('')// after it will
     }
   };
-//  update
+//  
   function Update(event)
   {
    
    return(
     <div>
-        <input
-            value={notes}
-            onChange={(event) => setCurrentNote(event.target.value)}
-            placeholder="Enter your note title..."
-          /><br></br>
-          <label className="description">Description</label>
-          <textarea
-            value={currentTitle}
-            onChange={(e) => setCurrentTitle(e.target.value)}
-            placeholder="Enter your note description..."
-          />
-{setNotes(e.target)}
+        
+
     </div>
    ) 
   }
   function Delete(index)
   {
-    setNotes((notes) => notes.filter((_, i) => i !== index));  
+    // setNotes((notes) => notes.filter((_, i) => i !== index));  
   }
  
   return (
@@ -64,7 +54,7 @@ const[currentTitle, setCurrentTitle] = useState('');
          
           <ul>
             {notes.map((note, index) => (
-              <li key={index}>{note} <button onClick={Update(e)}>Update</button>
+              <li key={index}>{note} <button onClick={Update()}>Update</button>
                <button onRemove={Delete(index)}>Delete</button>
               </li>
             ))}
